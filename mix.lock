@@ -1,0 +1,5 @@
+%{
+  "logfmt": {:hex, :logfmt, "3.3.0", "f863e19b9cac952f177f878074ec9304bb132eb9034306e75216dee88ca744d9", [:mix], [], "hexpm"},
+  "metrix": {:hex, :metrix, "0.4.2", "1a7a93b17f2a442294ee884ae0b92f11abb8598ed86240438117dec0948cb32d", [:mix], [{:logfmt, "~> 3.0", [hex: :logfmt, repo: "hexpm", optional: false]}], "hexpm"},
+  "statix": {:hex, :statix, "1.1.0", "af9a4586c5cd58f879e0595f06a4790878715de5b8f75f6346693aaa38da2424", [:mix], [], "hexpm"},
+}
