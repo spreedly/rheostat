@@ -28,12 +28,12 @@ the `dev` and `test` profiles and to use Statix in `prod`.
 
 ```elixir
 # dev, test
-config :rheostat, adapter: Rheostat.MetrixStats
+config :rheostat, adapter: Rheostat.Adapter.Metrix
 ```
 
 ```
 # prod
-config :rheostat, adapter: Rheostat.StatixAdapter
+config :rheostat, adapter: Rheostat.Adapter.Statix
 ```
 
 The Metrix adapter is also the default.

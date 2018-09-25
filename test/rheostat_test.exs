@@ -1,10 +1,10 @@
 defmodule RheostatTest do
   use ExUnit.Case
 
-  alias Rheostat.StatixAdapter
+  alias Rheostat.Adapter.Statix
 
   test "transforms the metadata" do
-    assert StatixAdapter.tags(%{"source" => "whitelist.0", "foo" => "bar"}) == [
+    assert Statix.tags(%{"source" => "whitelist.0", "foo" => "bar"}) == [
              "source:whitelist.0",
              "foo:bar"
            ]

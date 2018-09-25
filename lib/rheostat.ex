@@ -1,5 +1,5 @@
 defmodule Rheostat do
-  @stats Application.get_env(:rheostat, :adapter, Rheostat.MetrixStats)
+  @stats Application.get_env(:rheostat, :adapter, Rheostat.Adapter.Metrix)
 
   def connect(), do: @stats.connect()
 
@@ -19,7 +19,7 @@ defmodule Rheostat do
     do: @stats.measure(metadata, metric, fun)
 end
 
-defmodule Rheostat.MetrixAdapter do
+defmodule Rheostat.Adapter.Metrix do
   def connect(), do: :ok
 
   def count(metric), do: count(metric, 1)
@@ -39,8 +39,8 @@ defmodule Rheostat.MetrixAdapter do
     do: Metrix.measure(metadata, metric, fun)
 end
 
-defmodule Rheostat.StatixAdapter do
-  alias Rheostat.Adapter.Statix
+defmodule Rheostat.Adapter.Statix do
+  alias Rheostat.Internal.Adapter.Statix
 
   def connect(), do: Statix.connect()
 
@@ -71,6 +71,6 @@ defmodule Rheostat.StatixAdapter do
   end
 end
 
-defmodule Rheostat.Adapter.Statix do
+defmodule Rheostat.Internal.Adapter.Statix do
   use Statix
 end
