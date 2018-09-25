@@ -28,11 +28,17 @@ the `dev` and `test` profiles and to use Statix in `prod`.
 
 ```elixir
 # dev, test
+config :metrix,
+  prefix: "kafka-s3."
+
 config :rheostat, adapter: Rheostat.Adapter.Metrix
 ```
 
-```
+```elixir
 # prod
+config :statix,
+  prefix: "kafka-s3"
+
 config :rheostat, adapter: Rheostat.Adapter.Statix
 ```
 
@@ -43,13 +49,13 @@ The Metrix adapter is also the default.
 Because Rheostat has the same function interface as Metrix you can
 replace:
 
-```
+```elixir
   import Metrix
 ```
 
 with:
 
-```
+```elixir
   import Rheostat
 ```
 
