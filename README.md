@@ -44,6 +44,14 @@ config :rheostat, adapter: Rheostat.Adapter.Statix
 
 The Metrix adapter is also the default.
 
+Finally, the `Statix` addapter requires initialization, so add this to your application `start`:
+
+```
+  def start(_type, _args) do
+    :ok = Rheostat.connect()
+  end
+```
+
 ## Usage
 
 Because Rheostat has the same function interface as Metrix you can
@@ -58,5 +66,7 @@ with:
 ```elixir
   import Rheostat
 ```
+
+Or globaly replace `Metrix` with `Rheostat`.
 
 There may be other more clever ways to do that as well.
