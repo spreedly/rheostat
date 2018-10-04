@@ -8,14 +8,17 @@ defmodule Rheostat.MixProject do
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
-      deps: deps()
+      deps: deps(),
+      description: "A configurable stats provider",
+      name: "Rheostat",
+      source_url: "https://github.com/spreedly/rheostat",
+      package: package()
     ]
   end
 
   # Run "mix help compile.app" to learn about applications.
   def application do
-    [
-    ]
+    []
   end
 
   defp elixirc_paths(:test), do: ["lib", "test/support"]
@@ -25,7 +28,17 @@ defmodule Rheostat.MixProject do
   defp deps do
     [
       {:metrix, "~> 0.5.0"},
-      {:statix, "~> 1.0"}
+      {:statix, "~> 1.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
+    ]
+  end
+
+  defp package do
+    [
+      name: :rheostat,
+      licenses: ["MIT License"],
+      maintainers: ["Kevin Lewis", "Spreedly"],
+      links: %{"GitHub" => "https://github.com/spreedly/rheostat"}
     ]
   end
 end
