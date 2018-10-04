@@ -29,7 +29,7 @@ defmodule Rheostat.MixProject do
     [
       {:metrix, "~> 0.5.0"},
       {:statix, "~> 1.0"},
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:ex_doc, "~> 0.18.4", only: :dev}
     ]
   end
 
