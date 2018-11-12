@@ -19,7 +19,7 @@ defmodule Rheostat.Adapter.Statix do
     do: gauge(metric, value, tags: tags(metadata))
 
   def measure(metadata, key, fun) when is_map(metadata) do
-    measure(key, tags(metadata), fun)
+    measure(key, [tags: tags(metadata)], fun)
   end
 
   def measure(key, options, subject) when is_binary(key) do
