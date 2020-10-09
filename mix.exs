@@ -4,7 +4,7 @@ defmodule Rheostat.MixProject do
   def project do
     [
       app: :rheostat,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -28,7 +28,7 @@ defmodule Rheostat.MixProject do
   defp deps do
     [
       {:metrix, "~> 0.5.0"},
-      {:statix, "~> 1.0"},
+      {:statix, "~> 1.4.0"},
       {:ex_doc, "~> 0.18.4", only: :dev}
     ]
   end

@@ -1,10 +1,10 @@
 %{
-  "earmark": {:hex, :earmark, "1.2.6", "b6da42b3831458d3ecc57314dff3051b080b9b2be88c2e5aa41cd642a5b044ed", [:mix], [], "hexpm"},
-  "ex_doc": {:hex, :ex_doc, "0.18.4", "4406b8891cecf1352f49975c6d554e62e4341ceb41b9338949077b0d4a97b949", [:mix], [{:earmark, "~> 1.1", [hex: :earmark, repo: "hexpm", optional: false]}], "hexpm"},
-  "logfmt": {:hex, :logfmt, "3.3.0", "f863e19b9cac952f177f878074ec9304bb132eb9034306e75216dee88ca744d9", [:mix], [], "hexpm"},
+  "earmark": {:hex, :earmark, "1.2.6", "b6da42b3831458d3ecc57314dff3051b080b9b2be88c2e5aa41cd642a5b044ed", [:mix], [], "hexpm", "b42a23e9bd92d65d16db2f75553982e58519054095356a418bb8320bbacb58b1"},
+  "ex_doc": {:hex, :ex_doc, "0.18.4", "4406b8891cecf1352f49975c6d554e62e4341ceb41b9338949077b0d4a97b949", [:mix], [{:earmark, "~> 1.1", [hex: :earmark, repo: "hexpm", optional: false]}], "hexpm", "9dbe1ce1d711dc5362e3b3280e92989ad61413ce423bc4e9f76d5fcc51ab8d6b"},
+  "logfmt": {:hex, :logfmt, "3.3.0", "f863e19b9cac952f177f878074ec9304bb132eb9034306e75216dee88ca744d9", [:mix], [], "hexpm", "c912c9173ff92512a401cac31fd559ea6435865af3e5364f51272c87c0b52cc3"},
   "makeup": {:hex, :makeup, "0.5.5", "9e08dfc45280c5684d771ad58159f718a7b5788596099bdfb0284597d368a882", [:mix], [{:nimble_parsec, "~> 0.4", [hex: :nimble_parsec, repo: "hexpm", optional: false]}], "hexpm"},
   "makeup_elixir": {:hex, :makeup_elixir, "0.10.0", "0f09c2ddf352887a956d84f8f7e702111122ca32fbbc84c2f0569b8b65cbf7fa", [:mix], [{:makeup, "~> 0.5.5", [hex: :makeup, repo: "hexpm", optional: false]}], "hexpm"},
-  "metrix": {:hex, :metrix, "0.5.0", "75463ddfd89c575cf33d03abd0c69c8f04937a53bbbb4cdadd71afa370fcaec3", [:mix], [{:logfmt, "~> 3.0", [hex: :logfmt, repo: "hexpm", optional: false]}], "hexpm"},
+  "metrix": {:hex, :metrix, "0.5.0", "75463ddfd89c575cf33d03abd0c69c8f04937a53bbbb4cdadd71afa370fcaec3", [:mix], [{:logfmt, "~> 3.0", [hex: :logfmt, repo: "hexpm", optional: false]}], "hexpm", "4b48379f4db53e251355c42085315e1a28e16865eadc7923241cc2fe5e997fd1"},
   "nimble_parsec": {:hex, :nimble_parsec, "0.4.0", "ee261bb53214943679422be70f1658fff573c5d0b0a1ecd0f18738944f818efe", [:mix], [], "hexpm"},
-  "statix": {:hex, :statix, "1.1.0", "af9a4586c5cd58f879e0595f06a4790878715de5b8f75f6346693aaa38da2424", [:mix], [], "hexpm"},
+  "statix": {:hex, :statix, "1.4.0", "c822abd1e60e62828e8460e932515d0717aa3c089b44cc3f795d43b94570b3a8", [:mix], [], "hexpm", "507373cc80925a9b6856cb14ba17f6125552434314f6613c907d295a09d1a375"},
 }
