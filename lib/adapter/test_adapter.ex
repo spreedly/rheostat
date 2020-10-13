@@ -1,7 +1,7 @@
 defmodule Rheostat.Adapter.Test do
   @behaviour Rheostat.Adapter
 
-  def connect(), do: :ok
+  def connect(_opts), do: :ok
 
   def count(metadata, metric, num) do
     send(:test_case, {:count, metadata, metric, num})

@@ -19,7 +19,7 @@ defmodule Rheostat.Adapter do
   The configuration is read from the configuration for the `:statix` application
   (both globally and per connection).
   """
-  @callback connect() :: :ok
+  @callback connect(list()) :: :ok
 
   @doc """
   Increments the StatsD counter identified by `key` by the given `value`.

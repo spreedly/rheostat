@@ -10,7 +10,9 @@ defmodule Rheostat.Adapter.Statix do
 
   alias Rheostat.Internal.StatixAdapter
 
-  def connect(), do: StatixAdapter.connect()
+  def connect(opts) do
+    StatixAdapter.connect(opts)
+  end
 
   def count(metadata, metric, num), do: increment(metric, num, tags: tags(metadata))
 
@@ -64,5 +66,5 @@ defmodule Rheostat.Adapter.Statix do
 end
 
 defmodule Rheostat.Internal.StatixAdapter do
-  use Statix
+  use Statix, runtime_config: true
 end

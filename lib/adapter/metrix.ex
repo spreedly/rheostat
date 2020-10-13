@@ -7,7 +7,7 @@ defmodule Rheostat.Adapter.Metrix do
 
   @behaviour Rheostat.Adapter
 
-  def connect(), do: :ok
+  def connect(_opts), do: :ok
 
   def count(metadata, metric, num), do: Metrix.count(metadata, metric, num)
 

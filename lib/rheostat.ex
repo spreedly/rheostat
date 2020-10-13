@@ -15,7 +15,9 @@ defmodule Rheostat do
   the configuration for the `:statix` application (both globally and per
   connection).
   """
-  def connect(), do: adapter().connect()
+  def connect(opts \\ []) do
+    adapter().connect(opts)
+  end
 
   def count(metadata, metric, num) do
     adapter().count(metadata, metric, num)
