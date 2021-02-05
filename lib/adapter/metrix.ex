@@ -35,7 +35,7 @@ defmodule Rheostat.Adapter.Metrix do
   end
 
   def decrement(key, val \\ 1, options \\ []) when is_number(val) do
-    count(key, val, options)
+    count(metadata(options), key, -val)
     :ok
   end
 
